@@ -1,294 +1,441 @@
 <!-- 
 
- Title:   https://github.com/rvsp/HTML-CSS/blob/master/Tasks/laud-page.png
+  Title: https://github.com/rvsp/HTML-CSS/blob/master/Tasks/task-resume.jpeg
 
--->
+ -->
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <title>Resume</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <style>
-      h1 {
-        display: flex;
-        flex-direction: row;
+      li {
+        text-align: justify;
       }
-      h1:before,
-      h1:after {
-        content: "";
-        flex: 1 1;
-        border-bottom: 1px solid;
-        margin: auto;
+      #gradient-background {
+        background: linear-gradient(
+          231deg,
+          #8003a3,
+          #53719e,
+          #c6e9ed,
+          #4c5e67,
+          #292dd3
+        );
+        background-size: 300% 300%;
+        animation: gradient-animation 50s ease infinite;
       }
-      h1:before {
-        margin-right: 10px;
-      }
-      h1:after {
-        margin-left: 10px;
+
+      @keyframes gradient-animation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
       }
     </style>
   </head>
-  <body style="background-color: black">
-    <div class="container-fluid">
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link active" href="#" style="color: grey">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" style="color: grey">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" style="color: grey">Achievements</a>
-        </li>
-      </ul>
-    </div>
+  <body>
     <div class="container-fluid">
       <div
-        id="carouselExampleAutoplaying"
-        class="carousel slide"
-        data-bs-ride="carousel"
+        id="gradient-background"
+        class="row"
+        style="background-color: #b5c18e"
       >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+        <div class="col-md-5"></div>
+        <div class="col-md-2">
+          <div class="row" style="justify-content: center">
             <img
-              src="https://i.ytimg.com/vi/iMHFLKc5AFE/maxresdefault.jpg"
-              class="d-block w-100"
+              id="gradient-background"
+              src="./image/profile_pic.png"
+              class="img-thumbnail"
               alt="..."
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="https://media464212308.files.wordpress.com/2020/05/maxresdefault.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="https://res.cloudinary.com/jerrick/image/upload/c_scale,f_jpg,q_auto/5f755660564807001d2b777d.jpg"
-              class="d-block w-100"
-              alt="..."
+              style="border: none; padding-top: 15%"
             />
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="col-md-5"></div>
       </div>
+
+      <div
+        class="row"
+        style="
+          background-color: white;
+          height: 30px;
+          justify-content: center;
+          position: relative;
+          font-size: larger;
+          font-weight: bolder;
+        "
+      >
+        Balakrishnan D
+      </div>
+
+      <div id="gradient-background" class="row" style="height: 30px"></div>
+      <div
+        class="row"
+        style="background-color: white; height: 30px; margin-bottom: 30px"
+      ></div>
     </div>
-    <div
-      class="container"
-      style="margin-top: 50px; background-color: white; padding-top: 30px"
-    >
+
+    <div class="container-fluid" style="margin-top: 30px">
       <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-4">
-          <h3>About</h3>
-          <p>
-            Peter McKinnon is an internationally acclaimed photographer,
-            filmmaker, YouTube creator and entrepreneur based in Toronto,
-            Canada. Peter uses his platforms to inspire and help people pursue
-            their passions behind the lens. In 2019 he was named Breakout
-            YouTuber of the Year at the Shorty Awards and in 2020 received a
-            Streamy for Cinematographer of the Year. Peter’s work can be found
-            in a number of outlets but a notable personal achievement for this
-            Canadian was having his work featured on two special collection
-            coins issued by the Royal Canadian Mint.
-          </p>
-        </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-4">
-          <img
-            src="https://pbs.twimg.com/media/E8DB_RDXoAgZSBC.jpg:large"
-            class="img-fluid"
-            alt="..."
-          />
-        </div>
-        <div class="col-md-2"></div>
-      </div>
-      <div class="row" style="margin-top: 50px; padding-bottom: 50px">
-        <div class="col-md-4"></div>
-        <div class="col-md-4">
-          <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
-          <button
-            type="button"
-            class="btn btn-secondary"
-            style="margin: 5px 0px"
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="currentColor"
+            class="bi bi-person-circle"
+            viewBox="0 0 16 16"
           >
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+            <path
+              fill-rule="evenodd"
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+            />
+          </svg>
+          <span style="font-size: large"><b>Profile</b></span>
+          <p
+            style="text-align: justify; padding-top: 20px; padding-bottom: 20px"
+          >
+            Innovative optimized solution seeker who wants to be in a
+            challenging environment that provides opportunity for learning where
+            I can put use of my Optimum efforts for accomplishment of task
+            assigned to me and grow with the organization in the process.
+          </p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="currentColor"
+            class="bi bi-person-workspace"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"
+            />
+            <path
+              d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.4 5.4 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2z"
+            />
+          </svg>
+          <span
+            style="font-size: large; padding-top: 20px; padding-bottom: 20px"
+            ><b>Skills</b></span
+          >
+          <p
+            style="text-align: center; padding-top: 20px; padding-bottom: 20px"
+          >
+            <b>Technical Skills</b>
+          </p>
+
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Success example"
+            aria-valuenow="80"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="margin: 5px"
+          >
+            <div class="progress-bar bg-success" style="width: 80%">
+              Javascript
+            </div>
+          </div>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Info example"
+            aria-valuenow="50"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="margin: 5px"
+          >
+            <div class="progress-bar bg-info text-dark" style="width: 50%">
+              React JS
+            </div>
+          </div>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Warning example"
+            aria-valuenow="75"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="margin: 5px"
+          >
+            <div class="progress-bar bg-warning text-dark" style="width: 75%">
+              HTML5
+            </div>
+          </div>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Danger example"
+            aria-valuenow="80"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="margin: 5px"
+          >
+            <div class="progress-bar bg-danger" style="width: 80%">CSS</div>
+          </div>
+          <p
+            style="text-align: center; padding-top: 20px; padding-bottom: 20px"
+          >
+            <b>Additional Skills</b>
+          </p>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Basic example"
+            aria-valuenow="25"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="margin: 5px"
+          >
+            <div class="progress-bar" style="width: 100%">
+              Project Management
+            </div>
+          </div>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Basic example"
+            aria-valuenow="50"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="margin: 5px"
+          >
+            <div class="progress-bar" style="width: 80%">Recruitment</div>
+          </div>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Basic example"
+            aria-valuenow="75"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="margin: 5px"
+          >
+            <div class="progress-bar" style="width: 60%">Editing</div>
+          </div>
+          <p style="padding-top: 20px; padding-bottom: 20px"></p>
+          <!--  work experience start -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="currentColor"
+            class="bi bi-pc-display"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0m2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0M9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5M1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2z"
+            />
+          </svg>
+          <span
+            style="font-size: large; padding-top: 20px; padding-bottom: 20px"
+            ><b>Work Experience</b></span
+          >
+          <p style="margin: auto; padding-top: 20px">
+            <b>Client :</b> Alvaria Technologies Center (India) Pvt. Ltd
+          </p>
+          <p style="margin: auto">
+            <b>Role :</b> Senior Product Support Engineer
+          </p>
+          <p style="margin: auto"><b>Duration:</b> Feb 2020 to Till date</p>
+          <p><b>Contribution :</b> My responsibilities are as below</p>
+          <ul>
+            <li>
+              To Diagnose, troubleshoot, repair and debug Alvaria Software such
+              as CXP, Prophecy & VIA on managed services in Premise and Hosted
+              environments.
+            </li>
+            <li>
+              Handling the cases based on the Severity and to work within the
+              organization to restore the Severity 1 and other Severity issues
+              within SLA.
+            </li>
+            <li>
+              Designing, building, deploying, analyzing and optimizing Inbound
+              and Outbound applications.
+            </li>
+            <li>
+              Building IVR call flows, voice-user interface (VUI) design, audio
+              prompt recording, call center integration, testing, deployment and
+              analytics and reporting.
+            </li>
+            <li>
+              Documenting and verifying reported problems. Provide remote
+              technical and application problem resolution and escalation
+              assistance related to Alvaria products.
+            </li>
+            <li>
+              Proactively identify non-compliance of code against
+              requirements/standards/design and raise defects.
+            </li>
+          </ul>
+          <!-- work experience end -->
+        </div>
+
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+          <!--  work experience start -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="currentColor"
+            class="bi bi-pc-display"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0m2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0M9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5M1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2z"
+            />
+          </svg>
+          <span style="font-size: large"><b>Work Experience</b></span>
+          <p style="margin: auto; padding-top: 20px">
+            <b>Client :</b> Electronic Arts (EA GAMES) - WIPRO
+          </p>
+          <p style="margin: auto"><b>Role :</b> Senior Developer</p>
+          <p style="margin: auto"><b>Duration:</b> March 2018 to Jan 2020</p>
+          <p><b>Contribution :</b> My responsibilities are as below</p>
+          <ul>
+            <li>
+              Writing low level and high-level design documents for the assigned
+              JIRA task
+            </li>
+            <li>
+              Creating reusable components and front-end libraries for future
+              use.
+            </li>
+            <li>
+              Creating/Updating complex queries and stored procedures including
+              functions and views
+            </li>
+            <li>
+              Move changes to staging and perform various round of testing with
+              the help of QA testing team
+            </li>
+            <li>
+              On a successful sign off, move changes to Perforce and deploy the
+              latest changes to production according to weekly sprint plan
+            </li>
+          </ul>
+          <!-- work experience end -->
+          <p style="padding-top: 10px; padding-bottom: 10px"></p>
+          <!--  Education start -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="currentColor"
+            class="bi bi-book-half"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"
+            />
+          </svg>
+          <span style="font-size: large"><b>Education</b></span>
+          <p style="margin: auto; padding-top: 20px">
+            <b>MS </b>in <b>in Software Engineering</b> (2012 to 2016) with
+            <b>6.55 CGPA</b>
+          </p>
+          <p style="margin: auto"><b>University :</b> BITS</p>
+          <p style="margin: auto">
+            <b>College :</b> BIRLA INSTITUTE OF TECHNOLOGY AND SCIENCE, PILANI
+          </p>
+          <p style="padding-top: 10px; padding-bottom: 10px">
+            <b>Secondary, Higher Secondary & Bachelor Education Record </b>
+          </p>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Qualification</th>
+                <th scope="col">Year</th>
+                <th scope="col">(%)</th>
+                <th scope="col">School</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">SSLC</th>
+                <td>2007</td>
+                <td>79.2</td>
+                <td>NSB Higher Secondary School, Theni</td>
+              </tr>
+              <tr>
+                <th scope="row">PUC</th>
+                <td>2009</td>
+                <td>73.3</td>
+                <td>NSB Higher Secondary School, Theni</td>
+              </tr>
+              <tr>
+                <th scope="row">BCA</th>
+                <td>2012</td>
+                <td>71</td>
+                <td>ANJAC, Sivakasi</td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- Education end -->
+          <p style="padding-top: 10px; padding-bottom: 10px"></p>
+          <!--  Other Info start -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="currentColor"
+            class="bi bi-bicycle"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1v.5h4.14l.386-1.158A.5.5 0 0 1 11 4h1a.5.5 0 0 1 0 1h-.64l-.311.935.807 1.29a3 3 0 1 1-.848.53l-.508-.812-2.076 3.322A.5.5 0 0 1 8 10.5H5.959a3 3 0 1 1-1.815-3.274L5 5.856V5h-.5a.5.5 0 0 1-.5-.5m1.5 2.443-.508.814c.5.444.85 1.054.967 1.743h1.139zM8 9.057 9.598 6.5H6.402zM4.937 9.5a2 2 0 0 0-.487-.877l-.548.877zM3.603 8.092A2 2 0 1 0 4.937 10.5H3a.5.5 0 0 1-.424-.765zm7.947.53a2 2 0 1 0 .848-.53l1.026 1.643a.5.5 0 1 1-.848.53z"
+            />
+          </svg>
+          <span style="font-size: large"><b>Other Info</b></span>
+          <p style="margin: auto; padding-top: 20px"><b>DOB :</b> 4/5/1991</p>
+          <p style="margin: auto"><b>Place: </b> Theni</p>
+          <p style="margin: auto"><b>Phone: </b> 9876543210</p>
+          <p style="margin: auto"><b>Email: </b> balakrishnan4591@gmail.com</p>
+          <p style="margin-bottom: 20px">
+            <b>Other Skills: </b>
             <a
-              href="https://www.petermckinnon.com/"
-              target="_blank"
-              class="btn btn-secondary"
-              role="button"
-            >
-              <i class="fa fa-wikipedia-w" style="font-size: 14px"></i>
-              Learn More
-            </a>
-          </button>
-          <button type="button" class="btn btn-danger" style="margin: 5px 0px">
-            <a
-              href="https://www.youtube.com/@PeterMcKinnon"
+              href="https://www.youtube.com/@ChattyRotty"
               target="_blank"
               class="btn btn-danger"
               role="button"
             >
-              <i class="fa fa-youtube-play" style="font-size: 14px"></i>
-              Videos</a
-            >
-          </button>
-          <button type="button" class="btn btn-warning" style="margin: 5px 0px">
-            <a
-              href="https://www.petermckinnon.com/store"
-              target="_blank"
-              class="btn btn-warning"
-              role="button"
-            >
-              <i class="fa fa-shopping-cart" style="font-size: 14px"></i>
-              Shop
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-youtube"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+                />
+              </svg>
             </a>
-          </button>
-        </div>
-        <!-- </div> -->
-
-        <div class="col-md-4"></div>
-      </div>
-    </div>
-    <div class="container" style="background-color: black">
-      <div class="row" style="margin-top: 15px">
-        <p
-          style="
-            text-align: center;
-            color: white;
-            font-weight: bolder;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            padding-top: 5px;
-            padding-bottom: 5px;
-          "
-        >
-          You Don't know fear until you shoot a wedding entirely on film - PETER
-          MCKINNON
-        </p>
-      </div>
-    </div>
-    <div
-      class="container-fluid"
-      style="background-color: white; padding-top: 50px; padding-bottom: 50px"
-    >
-      <div class="row">
-        <h1><i class="fa fa-star-o" style="font-size: 24px">Awards</i></h1>
-      </div>
-      <div class="row" style="margin: 20px">
-        <div class="col-md-2"></div>
-        <div class="col-md-4" style="margin: 5px">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Breakout YouTuber of the Year</h4>
-              <p class="card-text">2019</p>
-              <p class="card-text">
-                The Shorty Awards recognize the best content creators and
-                producers on social media, and winning one is a significant
-                achievement in the digital media world.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4" style="margin: 5px">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Streamy for Cinematography</h4>
-              <p class="card-text">2020</p>
-              <p class="card-text">
-                The Streamy Awards, which are presented by YouTube and honor
-                excellence in online video, are among the most prestigious
-                awards in the digital media industry.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2"></div>
-      </div>
-    </div>
-    <div
-      class="container-fluid"
-      style="background-color: white; padding-bottom: 20px"
-    >
-      <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-4">
-          <h1 style="font-size: medium">Prints</h1>
-          <ul style="font-size: small">
-            <li>AUTOMOTIVE</li>
-            <li>TRAVEL</li>
-            <li>WINTER SERIES</li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h1 style="font-size: medium">Presets</h1>
-          <ul style="font-size: small">
-            <li>PM Lightroom V4 Presets 2021</li>
-            <li>PM Lightroom V3 Presets 2019</li>
-            <li>PM Lightroom V2 Presets 2018</li>
-            <li>PM Lightroom V1 Presets 2017</li>
-          </ul>
-        </div>
-        <div class="col-md-2"></div>
-      </div>
-    </div>
-    <div
-      class="container-fluid"
-      style="
-        background-color: black;
-        color: white;
-        font-size: small;
-        margin-top: 20px;
-      "
-    >
-      <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-3">
-          <p><b>About the Author</b></p>
-          <p>Made by Bala for GUVI Assignment</p>
-        </div>
-        <div class="col-md-2">
-          <p><b>Techs Used</b></p>
-          <p>HTML5, CSS, Bootstrap</p>
-        </div>
-        <div class="col-md-3">
-          <p><b>Content Disclaimer</b></p>
-          <p>
-            The content of this website is copied from Wikipedia,
-            petermckinnon.com
+            YouTuber, Certified Online Fitness Coach
           </p>
         </div>
-        <div class="col-md-2"></div>
+        <div class="col-md-1"></div>
       </div>
     </div>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
